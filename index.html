@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <html lang="zh-CN">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>个人简介</title>
+     <style>
+         * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI','Microsoft YaHei',sans-serif; }
+         body { background:#f0f5ff; min-height:100vh; display:flex; justify-content:center; align-items:center; }
+         .card { 
+             background:#fff; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.08); 
+             width:90%; max-width:600px; overflow:hidden; position:relative; 
+         }
+         .header { 
+             background:linear-gradient(135deg,#4b6cb7,#182848); 
+             padding:40px 20px 70px; text-align:center; 
+         }
+         .avatar { 
+             width:120px; height:120px; border-radius:50%; border:4px solid #fff;
+             position:absolute; left:50%; top:100px; transform:translateX(-50%);
+             box-shadow:0 5px 15px rgba(0,0,0,0.2); object-fit:cover;
+         }
+         .content { padding:80px 30px 30px; }
+         h1 { font-size:2.2rem; color:#fff; margin-bottom:5px; }
+         .title { color:#cbd5f0; font-size:1.1rem; }
+         .bio { 
+             font-size:1rem; line-height:1.7; color:#444; margin:20px 0;
+             text-align:center; 
+         }
+         .contact { 
+             display:flex; flex-wrap:wrap; gap:12px; justify-content:center;
+             margin-top:25px; 
+         }
+         .contact-item { 
+             background:#f8f9ff; padding:8px 16px; border-radius:50px;
+             font-size:0.9rem; transition:transform 0.3s; 
+         }
+         .contact-item:hover { transform:translateY(-3px); }
+         @media (max-width:500px) {
+             .avatar { width:100px; height:100px; top:90px; }
+             h1 { font-size:1.8rem; }
+             .content { padding:70px 20px 25px; }
+             .contact { flex-direction:column; align-items:center; }
+         }
+     </style>
+ </head>
+ <body>
+     <div class="card">
+         <div class="header">
+             <h1>张明轩</h1>
+             <p class="title">高级全栈工程师 | 人工智能开发者</p>
+             <img src="20250909_110854.png" alt="头像" class="avatar">
+         </div>
+         
+         <div class="content">
+             <p class="bio">
+                 六年全栈开发与AI算法经验，专注React/Vue前端架构及Python/Node.js后端系统。
+                 主导开发过3个百万级用户产品，系统响应时间优化65%。
+             </p>
+             <p class="bio">
+                 持续研究边缘计算与联邦学习技术，在国际会议发表分布式AI论文3篇。
+                 开源社区活跃贡献者，定期分享架构设计经验。
+             </p>
+             
+             <div class="contact">
+                 <div class="contact-item">📧 zhangmx@example.com</div>
+                 <div class="contact-item">🔗 github.com/zhangmx-dev</div>
+                 <div class="contact-item">📍 上海市浦东新区</div>
+             </div>
+         </div>
+     </div>
+ </body>
+ </html>
