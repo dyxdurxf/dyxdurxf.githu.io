@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+ <html lang="zh-CN">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>个人简介</title>
+     <style>
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+         }
+         body {
+             background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+             min-height: 100vh;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             padding: 20px;
+         }
+         .card {
+             background: rgba(255, 255, 255, 0.92);
+             border-radius: 20px;
+             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+             width: 100%;
+             max-width: 800px;
+             overflow: hidden;
+             display: flex;
+             flex-direction: column;
+             transition: transform 0.3s ease;
+         }
+         .card:hover {
+             transform: translateY(-10px);
+         }
+         .header {
+             background: linear-gradient(120deg, #4b6cb7 0%, #182848 100%);
+             color: white;
+             text-align: center;
+             padding: 40px 20px 70px;
+             position: relative;
+         }
+         .avatar {
+             width: 150px;
+             height: 150px;
+             border-radius: 50%;
+             border: 5px solid white;
+             object-fit: cover;
+             position: absolute;
+             left: 50%;
+             bottom: -75px;
+             transform: translateX(-50%);
+             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+         }
+         .content {
+             padding: 100px 40px 50px;
+         }
+         h1 {
+             font-size: 2.8rem;
+             margin-bottom: 5px;
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+         }
+         .title {
+             color: #6c757d;
+             font-size: 1.3rem;
+             margin-bottom: 30px;
+         }
+         .bio {
+             font-size: 1.15rem;
+             line-height: 1.8;
+             color: #444;
+             text-align: justify;
+             margin-bottom: 30px;
+         }
+         .highlight {
+             color: #4b6cb7;
+             font-weight: 600;
+         }
+         .contact {
+             display: flex;
+             flex-wrap: wrap;
+             gap: 20px;
+             margin-top: 30px;
+         }
+         .contact-item {
+             display: flex;
+             align-items: center;
+             background: #f8f9fa;
+             padding: 12px 25px;
+             border-radius: 50px;
+             transition: all 0.3s;
+         }
+         .contact-item:hover {
+             background: #eef2f7;
+             transform: translateY(-3px);
+         }
+         .footer {
+             padding: 25px;
+             text-align: center;
+             background: #f8f9fa;
+             color: #6c757d;
+             border-top: 1px solid #eee;
+         }
+         @media (max-width: 600px) {
+             .content { padding: 100px 25px 40px; }
+             .header { padding: 30px 15px 60px; }
+             h1 { font-size: 2.2rem; }
+             .avatar { width: 120px; height: 120px; bottom: -60px; }
+             .contact { flex-direction: column; }
+         }
+     </style>
+ </head>
+ <body>
+     <div class="card">
+         <div class="header">
+             <h1>张明轩</h1>
+             <p class="title">高级全栈工程师 | 人工智能开发者</p>
+         </div>
+         <img src="20250909_110854.png" alt="个人头像" class="avatar">
+         
+         <div class="content">
+             <p class="bio">
+                 您好！我是<span class="highlight">张明轩</span>，拥有6年全栈开发和AI算法经验。擅长使用React和Vue构建高性能前端应用，精通Node.js和Python后端开发，专注于将机器学习模型部署到生产环境。曾主导开发过3个百万级用户产品，优化系统性能使响应时间<span class="highlight">减少65%</span>。
+             </p>
+             <p class="bio">
+                 在技术领域，我持续关注<span class="highlight">边缘计算</span>和<span class="highlight">联邦学习</span>的前沿发展，曾在国际会议发表3篇关于分布式AI的论文。我的开发理念是：<span class="highlight">“用简洁架构解决复杂问题”</span>。工作之余，
+以上内容由AI搜集并生成，仅供参考
